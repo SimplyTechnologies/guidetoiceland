@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterButtons should render correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="filter-buttons-col col"
+      size={4}
+    >
+      <button
+        className="button selected-button btn btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Popular tips
+      </button>
+    </div>
+    <div
+      className="filter-buttons-col col"
+      size={4}
+    >
+      <button
+        className="button unselected-button btn btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Verified locals
+      </button>
+    </div>
+    <div
+      className="filter-buttons-col col"
+      size={4}
+    >
+      <button
+        className="button unselected-button btn btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Latest tips
+      </button>
+    </div>
+    <div
+      className="filter-buttons-col col"
+      size={4}
+    >
+      <button
+        className="button unselected-button btn btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Newest locals
+      </button>
+    </div>
+  </div>
+</div>
+`;

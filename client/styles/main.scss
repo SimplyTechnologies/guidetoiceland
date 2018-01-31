@@ -1,0 +1,97 @@
+@import "../../node_modules/animate.css/animate.min.css";
+
+
+$default_button_color: gray;
+$default_button_light_color: rgb(155, 155, 155);
+$white_color: white;
+$rose_color: #cc6699;
+$rose_white_color: #dc6e89;
+
+@mixin easing-background-transition($prop, $time: 200ms) {
+	transition: $prop $time;
+	&:hover {
+		transition: $prop $time;
+	}
+}
+
+.filter-buttons-col {
+	text-align: center;
+}
+.button {
+	@include easing-background-transition(background);
+	border-radius: 0%;
+	border: 1px solid $white_color;
+	
+
+	&:hover {
+		border: 1px solid $white_color;
+	}
+}
+.unselected-button {
+	background-color: $default_button_color;
+	color: $white_color;
+	&:hover {
+		background-color: $default_button_light_color;
+		color: $white_color;
+	}
+}
+
+
+.selected-button {
+	background-color: $rose_color;
+	color: $white_color;
+
+	&:hover {
+		color: $white_color;
+		background-color: $rose_white_color !important;
+	}
+}
+
+.gallery-col {
+	display: flex;
+	justify-content: center;
+	-webkit-animation-duration: 500ms;
+	-ms-animation-duration: 500ms;
+	animation-duration: 500ms;
+
+	.gallery-item-title {
+		@include easing-background-transition(opacity);
+		display: flex;
+		align-items: flex-end;
+		color: $white_color;
+	
+		span {
+			background-color: $rose_color;
+			border: 1px solid $white_color;
+			margin-bottom: 10px;
+			padding: 0 5px;
+		}
+	}
+	
+	.gallery-item-description {
+		background-color: rgba($rose_color, 0.7);
+		color: $white_color;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 0 7px;
+		font-size: 14px;
+    	text-align: center;
+	}
+
+	&:hover {
+		.gallery-item-title {
+			span {
+				@include easing-background-transition(opacity);
+				opacity: 0
+			}
+		}
+		.gallery-item-description {
+			@include easing-background-transition(opacity);
+			opacity: 1;
+		}
+	}
+}

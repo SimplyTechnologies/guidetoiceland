@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GalleryItem should render correctly 1`] = `
+<div
+  className="col animated fadeInUp gallery-col col-12 col-sm-6 col-md-4 col-lg-2"
+  style={
+    Object {
+      "background": "url(https://guidetoiceland.imgix.net/267234/x/0/agust-2014-austfirdir-019.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&h=600&ixlib=php-1.1.0&w=300&s=aff79094054018fceff66d7684f6deed) center center no-repeat",
+      "backgroundSize": "cover",
+      "height": "300px",
+    }
+  }
+>
+  <div
+    className="gallery-item-title"
+  >
+    <span>
+      Lorem ipsum ahmist ahad
+    </span>
+  </div>
+  <div
+    className="gallery-item-description"
+  >
+    <span>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+    </span>
+  </div>
+</div>
+`;
